@@ -1,0 +1,21 @@
+.menu {
+  display: flex;
+  list-style-type: none;
+
+  &__item {
+    padding: 5px;
+    margin: 2px;
+    background-color: aqua;
+    /*transition-property: color;
+        transition-duration: 2s;
+        transition-timing-function: linear;*/
+
+    /*transition: color 2s lienar, background-color 1s linear; */
+    transition: all 2s linear;
+
+    &:hover {
+      color: white;
+      background-color: blueviolet;
+    }
+  }
+}

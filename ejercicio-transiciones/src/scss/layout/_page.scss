@@ -1,0 +1,56 @@
+/*EJEMPLO ANIMACION con box1---------------------*/
+/*
+@keyframes acordion {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(1.5);
+  }
+}
+
+.box {
+  width: 400px;
+  height: 200px;
+  background-color: burlywood;
+  animation: acordion 2s 5 linear; 
+}
+*/
+/*-----------------EJEMPLO ANIMACION CON BOX2--------------------------------*/
+/*
+@keyframes rotateBox {
+  0% {
+    transform: translate(0);
+    background-color: pink;
+  }
+  25% {
+    transform: translateX(500px) rotate(180deg);
+    background-color: palevioletred;
+  }
+  50% {
+    transform: translate(500px, 500px);
+    background-color: rebeccapurple;
+  }
+  75% {
+    transform: translate(0px, 500px);
+    background-color: purple;
+  }
+}
+
+.box2 {
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: burlywood;
+  animation: rotateBox 5s infinite linear; /*nombre que le ponemos, tiempo que dura,numero de veces que se repite, tipo
+}*/
+.popup {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: translateY(600px);
+    transition: all 2s;
+}
+body:hover .popup {
+    transform: translateY(0);
+}
