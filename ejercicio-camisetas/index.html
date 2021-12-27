@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisetas molonas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//beta.adalab.es/resources/stylesheets/all.css" />
+</head>
+<body class="page">
+    <div id="root">
+      <div class="col2">
+        <div>
+          <h2 class="title--medium">Listado de camisetas</h2>
+          <!--
+          <form class="mb-1">
+            <label class="form__label" for="name">Filtrar por nombre:</label
+            ><input class="form__input-text" type="text" id="name" value="" />
+          </form>
+          -->
+          <section class="cards js_shirtlist">
+           <p>Cargando la información</p>
+
+          </section>
+        </div>
+        <div>
+          <h2 class="title--medium">Cesta de la compra</h2>
+          <table class="table">
+            <thead>
+              <tr class="text--bold">
+                <td>Producto</td>
+                <td>Precio</td>
+                <td>Unidades</td>
+                <td class="text-align-right">Total</td>
+              </tr>
+            </thead>
+            <tbody class="js_cartlist"></tbody>
+            <tfoot>
+              <tr class="text--bold">
+                <td>Total</td>
+                <td colspan="3" class="text-align-right">0 €</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

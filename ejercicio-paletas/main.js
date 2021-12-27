@@ -1,3 +1,4 @@
+
 "use strict";
 
 //DECLARACIÓN DE VARIABLES GLOBALES
