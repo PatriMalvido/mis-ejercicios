@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+  }
+}
+body {
+  width: 100vh;
+  height: 100%;
+  background-image: url('../images/wallpaperflare.com_wallpaper.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgb(75, 73, 73);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 30px 28px;
+  grid-gap: 30px;
+  align-items: stretch;
+}
+
+.card {
+  display: block;
+  transition: transform 0.3s cubic-bezier(0.374, 0.019, 0.035, 1.861);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(96, 96, 96, 1) 35%,
+    rgba(156, 156, 156, 1) 100%
+  );
+  border-radius: 4px;
+  box-shadow: 0 6px 6px 3px rgba(253, 253, 253, 0.1);
+  width: 100%;
+  height: 340px;
+  list-style: none;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+  &__img {
+    display: block;
+    object-fit: contain;
+    margin: auto;
+    padding: 10px;
+    width: 200px;
+    height: 250px;
+  }
+  &__title {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+  }
+  &__description {
+    color: white;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+  }
+}
+
+.modal__container {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+.modal__close {
+  list-style: none;
+  color: black;
+  padding: 5px;
+}
+
+.modal__text {
+  color: black;
+  padding: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 50px;
+}
+.modal__title {
+  color: white;
+}
+.modal__card {
+  display: flex;
+  width: 450px;
+  height: 450px;
+  justify-content: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(96, 96, 96, 1) 35%,
+    rgba(156, 156, 156, 1) 100%
+  );
+  box-shadow: 0 10px 10px 10px rgba(252, 249, 249, 0.1);
+  border-radius: 8px;
+  align-items: center;
+
+  &-text {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px;
+  }
+}
+.container__about {
+  display: flex;
+
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.modal__about {
+  margin: 20px;
+  &-title {
+    padding: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+  }
+  &-text {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    color: white;
+  }
+}
+
+//-------------------------------------------
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  width: 650px;
+  min-height: 300px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.score-section {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #353841;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #6e7174;
+  cursor: pointer;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: #bd2727;
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
+}
